@@ -5,6 +5,14 @@ title: teaching
 description: Materials for courses you taught. Replace this text with your description.
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+#### Fall 2017
+* **Informatik 1** Assistant: Co-Lecturer; TA's manager
+* **Software Maintenance and Evolution** Assistant: Co-Lecturer
 
-Organize your courses by years, topics, or universities, however you like!
+#### Spring 2017
+* **Sopra** Teaching Assistant: managed students' groups into the development of their project's course
+
+---
+
+### Adviced Students
+* **Lucas Pelloni** (Bachelor Thesis): *GUI usability and testing of mobile applications*

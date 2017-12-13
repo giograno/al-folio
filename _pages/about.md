@@ -1,23 +1,25 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: <strong>Giovanni</strong> Grano
+description: PhD Student @ <a href="https://www.ifi.uzh.ch/en/seal.html">s.e.a.l.</a>. University of Zurich. Department of Informatics
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: mexican.png
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>BIN 2.D.05</p>
+    <p>Binzmühlestrasse 14</p>
+    <p>Zurich, Switzerland</p>
 
 news: true
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I was born in Campobasso (Italy) on April, 24th, 1990. I received (cum laude) the Bachelor’s Degree in Computer Science from the University of Molise (Italy) in 2013, advised by Prof. [Rocco Oliveto](https://dibt.unimol.it/staff/oliveto/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Afterwards I moved to the University of Salerno, where in 2015 I received my Master’s Degree (cum laude) in Computer Science, advised by Prof. [Andrea De Lucia](http://docenti.unisa.it/003241/home), defending a thesis on Search Based Software Testing.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Just after my M.Sc. I worked for one year as IT Analyst and Developer at Cedacri S.p.A., as a developer for the banking sector. In November 2016 I started my Ph.D., joining the s.e.a.l. group at the University of Zurich.
+
+Passionate about research, coding, running and coffee. 
