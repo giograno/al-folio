@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: My teaching experience and the students I advised
 ---
 
 #### Fall 2017
@@ -14,5 +14,5 @@ description: Materials for courses you taught. Replace this text with your descr
 
 ---
 
-### Adviced Students
+### Students
 * **Lucas Pelloni** (Bachelor Thesis): *GUI usability and testing of mobile applications*
