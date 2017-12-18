@@ -112,7 +112,7 @@ Let’s  see another example. Assuming that we modify our `some_func.py` in the 
 ```python
 def fib(n):   
     """ Returns the Finonacci series set up to n """
-	  print('Executing the module {}'.format(__name__))
+    print('Executing the module {}'.format(__name__))
     result = []
     a, b = 0, 1
     while b < n:
@@ -126,7 +126,7 @@ def add(a, b):
    return result
 
 if __name__ == '__main__':
-    print(fib(10)
+    print(fib(10))
 ```
 
 If we run that file directly with `python some_func.py` (the file is the starting point)  the output will be the following.
@@ -148,4 +148,4 @@ Executing the module some_func
 So, why do often Python scripts report that `if __name__ == ‘__main__’`? Well, often is because we might want to have a different execution happening if our module is called as top level script or if is imported.
 You might want to put into the `if __name__ == '__main__'` something that you need to execute only when your module is actually the starting point of your Python execution, like in the exercise that I was showing to my students.
 
-*Note: at that time, the students were still missing their lecture on modules 😜*!
+*Note: at that time, the students were still missing their lecture on modules* 😜!
