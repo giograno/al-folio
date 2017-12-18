@@ -2,47 +2,13 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A collection of research, personal and open source projects
 ---
 
-{% for project in site.projects %}
+### research project
+* **OCELOT**: A test cases generation tool for C - [link]({{ site.baseurl }}{% link _projects/ocelot.md %})
 
-{% if project.redirect %}
-<div class="project">
-    <div class="thumbnail">
-        <a href="{{ project.redirect }}" target="_blank">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-{% else %}
+### personal projects
+* **MyUnimol**: MyUnimol is a suite of software products addressed to student of University of Molise - [link]({{ site.baseurl }}{% link _projects/myunimol.md %})
 
-<div class="project ">
-    <div class="thumbnail">
-        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-{% endif %}
-
-{% endfor %}
+* **CityExplorer**: prototype that won the ESRI Award at HackZurich 2017! 🎉 - [link]({{ site.baseurl }}{% link _projects/hackzurich.md %})
