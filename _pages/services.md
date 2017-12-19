@@ -11,4 +11,4 @@ description: My contribution to SE community
 * Seminar Series on Advanced Techniques & Tools for Software Evolution (**SATToSE 2017**)
 
 ### grants
-* GRC Travel Found of 1,200 CHF for a research visit ad Delft University of Technology
+* GRC Travel Grant of 1,200 CHF for a research visit ad Delft University of Technology
