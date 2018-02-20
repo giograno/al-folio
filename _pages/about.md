@@ -6,7 +6,7 @@ description: PhD Student @ <a href="https://www.ifi.uzh.ch/en/seal.html">s.e.a.l
 
 profile:
   align: right
-  image: mexican.png
+  image: site.png
   address: >
     <p>BIN 2.D.05</p>
     <p>Binzmühlestrasse 14</p>
