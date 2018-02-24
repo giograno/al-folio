@@ -24,6 +24,6 @@ Just after my M.Sc. I worked for one year as IT Analyst and Developer at [Cedacr
 
 My main research interests include Search-Based Software Engineering (SBSE), with a main focus on Seach-Based Software Testing (SBST), Software maintenance and evolution and Empirical Software Engineeering.
 
-Passionate about research, coding, running and coffee. 
+Passionate about research, coding, running (follow me [here](https://www.strava.com/athletes/20803711)) and coffee. 
 
 Here is a PDF version of my [CV]({{ site.baseurl }}{% link assets/pdf/cv_10.pdf %})!
