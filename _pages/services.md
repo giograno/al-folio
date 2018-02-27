@@ -6,7 +6,6 @@ description: My contribution to SE community
 ---
 
 ### co-reviewer
-* International Conference on Program Comprehension - Early Research Achievement (**ICPC ERA 2018**)
 * Mining Software Repositories (**MSR 2018**)
 * International Conference on Software Analytics, Evolution and Reegineering (**SANER 2018**)
 * Automated Software Engineering (**ASE 2017**)
