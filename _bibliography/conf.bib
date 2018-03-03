@@ -1,0 +1,41 @@
+@inproceedings{grano2018anempirical,
+  author = {Grano, Giovanni and Scalabrino, Simone and Oliveto, Rocco and Gall, Harald},
+  title = {An Empirical Investigation on the Readability of Manual and Generated Test Cases},
+  booktitle = {Proceedings of the 26th International Conference on Program Comprehension, ICPC (to appear)},
+  year = {2018},
+  abstract = {Software testing is one of the most crucial tasks in the typical development process. Developers are usually required to write unit test cases for the code they implement. Since this is a time-consuming task, in last years many approaches and tools for automatic test case generation — such as EvoSuite — have been introduced. Nevertheless, developers have to maintain and evolve tests to sustain the changes in the source code; therefore, having readable test cases is important to ease such a process.
+  However, it is still not clear whether developers make an effort in writing readable unit tests. Therefore, in this paper, we conduct an explorative study comparing the readability of manually written test cases with the classes they test. Moreover, we deepen such analysis looking at the readability of automatically generated test cases. Our results suggest that developers tend to neglect the readability of test cases and that automatically generated test cases are generally even less readable than manually written ones.},
+  pdf = {conf/icpc18short.pdf}
+} 
+
+@inproceedings{grano2018,
+  author    = {Grano, Giovanni and
+               Ciurumelea, Adelina and
+               Palomba, Fabio and
+               Panichella, Sebastiano and
+               Gall, Harald},
+  title     = {Exploring the Integration of User Feedback in Automated Testing of Android Applications},
+  booktitle = {{SANER (to appear)}},
+  year      = {2018},
+  abstract  = {The intense competition characterizing mobile application's marketplaces forces developers to create and maintain high-quality mobile apps in order to ensure their commercial success and acquire new users. This motivated the research community to propose solutions that automate the testing process of mobile apps. However, the main problem of current testing tools is that they generate redundant and random inputs that are insufficient to properly simulate the human behavior, thus leaving feature and crash bugs undetected until they are encountered by users. To cope with this problem, we conjecture that information available in user reviews---that previous work showed as effective for maintenance and evolution problems---can be successfully exploited to identify the main issues users experience while using mobile applications, e.g., GUI problems and crashes. 
+In this paper we provide initial insights into this direction, investigating (i) what type of user feedback can be actually exploited for testing purposes, (ii) how complementary user feedback and automated testing tools are, when detecting crash bugs or errors and (iii) whether an automated system able to monitor crash-related information reported in user feedback is sufficiently accurate. Results of our study, involving 11,296 reviews of 8 mobile applications, show that user feedback can be exploited to provide contextual details about errors or exceptions detected by automated testing tools. Moreover, they also help detecting bugs that would remain uncovered when rely on testing tools only. Finally, the accuracy of the proposed automated monitoring system demonstrates the feasibility of our vision, i.e., integrate user feedback into testing process.},
+    pdf       = {conf/saner18.pdf}
+}
+
+@inproceedings{scalabrino2016search,
+  author    = {Scalabrino, Simone and
+               Grano, Giovanni and
+              {Di Nucci}, Dario and
+              Oliveto, Rocco and
+               {De Lucia}, Andrea},
+  title     = {Search-Based Testing of Procedural Programs: Iterative Single-Target
+               or Multi-target Approach?},
+  booktitle = {{SSBSE}},
+  series    = {Lecture Notes in Computer Science},
+  abstract  = {In the context of testing of Object-Oriented (OO) software systems, researchers have recently proposed search based approaches to automatically generate whole test suites by considering simultaneously all targets (e.g., branches) defined by the coverage criterion (multi-target approach). The goal of whole suite approaches is to overcome the problem of wasting search budget that iterative single-target approaches (which iteratively generate test cases for each target) can encounter in case of infeasible targets. However, whole suite approaches have not been implemented and experimented in the context of procedural programs. In this paper we present OCELOT (Optimal Coverage sEarch-based tooL for sOftware Testing), a test data generation tool for C programs which implements both a state-of-the-art whole suite approach and an iterative single-target approach designed for a parsimonious use of the search budget. We also present an empirical study conducted on 35 open-source C programs to compare the two approaches implemented in OCELOT. The results indicate that the iterative single-target approach provides a higher efficiency while achieving the same or an even higher level of coverage than the whole suite approach.},
+  volume    = {9962},
+  pages     = {64--79},
+  year      = {2016},
+  slides    = {slides/ocelot.pdf},
+  pdf       = {conf/lips.pdf}
+}
