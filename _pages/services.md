@@ -14,3 +14,9 @@ description: My contribution to SE community
 ### grants
 * CHOOSE Grant of 500 CHF to attend SANER 2018
 * GRC Travel Grant of 1,200 CHF for a research visit ad Delft University of Technology
+
+### awards
+
+* Best Tool Paper Demo Award @ SANER 2018
+* Winner of Esri Award @ HackZurich 2017
+* SCORE-IT Award @ ICSE 2015
