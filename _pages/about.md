@@ -20,7 +20,7 @@ I was born in Campobasso (Italy) on April, 24th, 1990. I received (cum laude) th
 
 Afterwards I moved to the University of Salerno, where in 2015 I received my Master’s Degree (cum laude) in Computer Science, advised by Prof. [Andrea De Lucia](http://docenti.unisa.it/003241/home), defending a thesis on Search Based Software Testing.
 
-Just after my M.Sc. I worked for one year as IT Analyst and Developer at [Cedacri S.p.A.](http://www.cedacri.it/cedacri/en/index.html), as a developer for the banking sector. In November 2016 I started my Ph.D., joining the [s.e.a.l.](https://www.ifi.uzh.ch/en/seal.html) group at the University of Zürich.
+Just after my M.Sc. I worked for one year as IT Analyst and Developer at [Cedacri S.p.A.](http://www.cedacri.it/cedacri/en/index.html), as a developer for the banking sector. In November 2016 I started my Ph.D., joining the [s.e.a.l.](https://www.ifi.uzh.ch/en/seal.html) group at the University of Zürich, lead by Prof. [Harald C. Gall](http://www.ifi.uzh.ch/en/seal/people/gall.html).
 
 My main research interests include Search-Based Software Engineering (SBSE), with a main focus on Search-Based Software Testing (SBST), Software maintenance and evolution and Empirical Software Engineering.
 
