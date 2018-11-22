@@ -27,7 +27,7 @@ google_analytics: UA-117335212-1 # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: Giovanni Grano
-blog_description: something that I am thinking about
+blog_description: random stuff about research, software and running
 
 # Pagination
 paginate: 4
