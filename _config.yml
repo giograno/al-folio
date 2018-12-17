@@ -17,7 +17,9 @@ last_updated: # leave blank if you don't want to display last updated
 github_username: giograno
 twitter_username: giograno90
 linkedin_username: giovannigrano
-scholar_authorid: UuGF6ScAAAAJ
+scholar_userid: UuGF6ScAAAAJ
+strava_userid: 20803711
+orcid_id: https://orcid.org/0000-0002-8207-3259
 contact_note: >
   You can just say hi by mail or even tweet to me 
 
@@ -70,11 +72,13 @@ news_limit: 5
 markdown: kramdown
 highlighter: pygments
 
-# Includes
+# Includes & excludes
 include: ['_pages']
+exclude: [vendor]
 
-# Gems
-gems:
+# Plug-ins
+plugins:
+    - jekyll-email-protect
     - jekyll-paginate
     - jekyll/scholar
     - jemoji
@@ -107,5 +111,5 @@ scholar:
 # Other settings
 # -----------------------------------------------------------------------------
 jquery_version: "1.12.4"
-katex_version: "0.7.1"
+katex_version: "0.9.0"
 anchorjs_version: "3.2.2"
