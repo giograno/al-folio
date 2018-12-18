@@ -95,7 +95,7 @@ scholar:
   order: descending
 
   source: /_bibliography/
-  bibliography: 
+  bibliography: biblio.bib 
   bibliography_template: bib
 
   replace_strings: true
