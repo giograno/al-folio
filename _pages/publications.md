@@ -7,8 +7,16 @@ conf_y: [2018, 2017, 2016]
 thesis_y : [2015]
 workshop_y: [2018, 2017]
 tool_y: [2018]
+journals_y: [2019]
 books_y: [2018]
 ---
+
+journals
+--------------------
+{% for y in page.journals_y %}
+  <h3 class="year">{{y}}</h3>
+  {% bibliography -f journals -q @*[year={{y}}]* %}
+{% endfor %}
 
 conference and workshop papers
 --------------------

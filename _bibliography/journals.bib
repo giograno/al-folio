@@ -1,0 +1,24 @@
+@article{grano2019branch,
+  author    = {Giovanni Grano and
+               Timofey V. Titov and
+               Sebastiano Panichella and
+               Harald C. Gall},
+  title     = {Branch Coverage Prediction in Automated Testing},
+  journal   = {Journal of Software: Evolution and Process},
+  year      = {2019},
+  url       = {https://10.1002/smr.2158},
+  doi       = {10.1002/smr.2158},
+  abstract  = {Software testing is crucial in continuous integration (CI).
+Ideally, at every commit, all the test cases should be executed and, moreover, new test cases should be generated for the new source code.
+This is especially true in a Continuous Test Generation (CTG) environment, where the automatic generation of test cases is integrated into the continuous integration pipeline.
+In this context, developers want to achieve a certain minimum level of coverage for every software build.
+However, executing all the test cases and, moreover, generating new ones for all the classes at every commit is not feasible. 
+As a consequence, developers have to select which subset of classes has to be tested and/or targeted by test-case generation.
+We argue that knowing a priori the branch-coverage that can be achieved with test-data generation tools can help developers into taking informed-decision about those issues. 
+In this paper, we investigate the possibility to use source-code metrics
+to predict the coverage achieved by test-data generation tools.
+We use four different categories of source-code features and assess the prediction on a large dataset involving more than 3'000 Java classes.
+We compare different machine learning algorithms and conduct a fine-grained feature analysis aimed at investigating the factors that most impact the prediction accuracy.
+Moreover, we extend our investigation to four different search-budgets.
+Our evaluation shows that the best model achieves an average 0.15 and 0.21 MAE on nested cross-validation over the different budgets, respectively on EvoSuite and Randoop. Finally, the discussion of the results demonstrate the relevance of coupling-related features for the prediction accuracy.}
+}
