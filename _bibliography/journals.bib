@@ -6,6 +6,7 @@
   title     = {Branch Coverage Prediction in Automated Testing},
   journal   = {Journal of Software: Evolution and Process},
   year      = {2019},
+  month = 1,
   url       = {https://10.1002/smr.2158},
   doi       = {10.1002/smr.2158},
   abstract  = {Software testing is crucial in continuous integration (CI).
@@ -21,4 +22,15 @@ We use four different categories of source-code features and assess the predicti
 We compare different machine learning algorithms and conduct a fine-grained feature analysis aimed at investigating the factors that most impact the prediction accuracy.
 Moreover, we extend our investigation to four different search-budgets.
 Our evaluation shows that the best model achieves an average 0.15 and 0.21 MAE on nested cross-validation over the different budgets, respectively on EvoSuite and Randoop. Finally, the discussion of the results demonstrate the relevance of coupling-related features for the prediction accuracy.}
+}
+
+@article{grano2019lightweight,
+  title={Lightweight Assessment of Test-Case Effectiveness using Source-Code-Quality Indicators},
+  author={Grano, Giovanni and Palomba, Fabio and Gall, Harald},
+  journal={IEEE Transactions on Software Engineering},
+  year={2019},
+  month = 2,
+  publisher={IEEE},
+  abstract = {Test cases are crucial to help developers preventing the introduction of software faults. Unfortunately, not all the tests are properly designed or can effectively capture faults in production code. Some measures have been defined to assess test-case effectiveness: the most relevant one is the mutation score, which highlights the quality of a test by generating the so-called mutants, ie variations of the production code that make it faulty and that the test is supposed to identify. However, previous studies revealed that mutation analysis is extremely costly and hard to use in practice. The approaches proposed by researchers so far have not been able to provide practical gains in terms of mutation testing efficiency. This leaves the problem of efficiently assessing test-case effectiveness as still open. In this paper, we investigate a novel, orthogonal, and lightweight methodology to assess test-case effectiveness: in particular, we study the feasibility to exploit production and test-code-quality indicators to estimate the mutation score of a test case. We firstly select a set of 67 factors and study their relation with test-case effectiveness. Then, we devise a mutation score estimation model exploiting such factors and investigate its performance as well as its most relevant features. The key results of the study reveal that our estimation model only based on static features has 86% of both F-Measure and AUC-ROC. This means that we can estimate the test-case effectiveness, using source-code-quality indicators, with high accuracy and without executing the tests. As a consequence, we can provide a practical approach that is beyond the typical limitations of current mutation testing techniques.},
+  pdf={journals/tse19lightweight.pdf}
 }
