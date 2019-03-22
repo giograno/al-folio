@@ -28,8 +28,8 @@ google_analytics: UA-117335212-1 # out your google-analytics code
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: Giovanni Grano
-blog_description: random stuff about research, software and running
+blog_name: giovanni grano's blog
+blog_description: random stuff about research and software
 
 # Pagination
 paginate: 4
