@@ -49,4 +49,4 @@ For the next 2km we slowed down a bit (about 6’13”), so I tried to increase 
 
 I have to be honest: it took to me a couple of minutes to realize that that I just improved my PB of 83” seconds, running 1h04’53”. I waited for some friends to cross the line: Armin, Fabian and Francesco (Puppi) that unfortunately had some physical problems and he is still recovering from that. 
 
-I had a fantastic day in Barcelona. Looking at the final results, it was the same for many many athletes. In Italy, we should learn how to organize races such this, attracting many elite, sub-elites as well as thousands of casual runners. And now, after a 83” improvement on the half, I am already super excited thinking at my next goal: *Rotterdam Marathon* on April 7h.
+I had a fantastic day in Barcelona. Looking at the final results, it was the same for many many athletes. In Italy, we should learn how to organize races such this, attracting many elite, sub-elites as well as thousands of casual runners. And now, after a 83” improvement on the half, I am already super excited thinking at my next goal: **Rotterdam Marathon** on April 7h.
