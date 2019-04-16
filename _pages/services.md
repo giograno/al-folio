@@ -5,20 +5,23 @@ title: services
 description: My contribution to SE community
 ---
 
-### reviewer for international journals
-* Empirical Software Engineering - Springer
+### professional service
 
-### co-reviewer for international conferences and workshops
-* Mining Software Repositories (**MSR 2018**)
-* International Conference on Software Analytics, Evolution and Reegineering (**SANER 2018**)
-* Automated Software Engineering (**ASE 2017**)
-* Seminar Series on Advanced Techniques & Tools for Software Evolution (**SATToSE 2017**)
+#### reviewer for international journals
+* **EMSE** Empirical Software Engineering: An International Journal, Springer
+* **JSS** Journal of Systems and Software, Elsevier
 
-### grants
+#### conferences
+* **2018**: MSR (co-reviewer), SANER (co-reviewer)
+* **2017**: ASE (co-reviewer), SATToSE (co-reviewer)
+
+### awards and honors
+ 
+#### grants
 * CHOOSE Grant of 500 CHF to attend SANER 2018
 * GRC Travel Grant of 1,200 CHF for a research visit ad Delft University of Technology
 
-### awards
+#### awards
 
 * Best Tool Paper Demo Award @ SANER 2018
 * Winner of Esri Award @ HackZurich 2017
