@@ -38,3 +38,15 @@ pdf = {journals/jsep19.pdf}
   abstract = {Test cases are crucial to help developers preventing the introduction of software faults. Unfortunately, not all the tests are properly designed or can effectively capture faults in production code. Some measures have been defined to assess test-case effectiveness: the most relevant one is the mutation score, which highlights the quality of a test by generating the so-called mutants, ie variations of the production code that make it faulty and that the test is supposed to identify. However, previous studies revealed that mutation analysis is extremely costly and hard to use in practice. The approaches proposed by researchers so far have not been able to provide practical gains in terms of mutation testing efficiency. This leaves the problem of efficiently assessing test-case effectiveness as still open. In this paper, we investigate a novel, orthogonal, and lightweight methodology to assess test-case effectiveness: in particular, we study the feasibility to exploit production and test-code-quality indicators to estimate the mutation score of a test case. We firstly select a set of 67 factors and study their relation with test-case effectiveness. Then, we devise a mutation score estimation model exploiting such factors and investigate its performance as well as its most relevant features. The key results of the study reveal that our estimation model only based on static features has 86% of both F-Measure and AUC-ROC. This means that we can estimate the test-case effectiveness, using source-code-quality indicators, with high accuracy and without executing the tests. As a consequence, we can provide a practical approach that is beyond the typical limitations of current mutation testing techniques.},
   pdf={journals/tse19lightweight.pdf}
 }
+
+@article{vassallo2019large,
+  title={A Large-Scale Empirical Exploration on Refactoring Activities in Open Source Software Projects},
+  author={Vassallo, Carmine and Grano, Giovanni and Palomba, Fabio and Gall, Harald and Bacchelli, Alberto},
+  journal={Science of Computer Programming},
+  year={2019},
+  month = 5,
+  publisher={Elsevier},
+  abstract = {Refactoring is a well-established practice that aims at improving the internal structure of a software system without changing its external behavior. Existing literature provides evidence of how and why developers perform refactoring in practice. In this paper, we continue on this line of research by performing a large-scale empirical analysis of refactoring practices in 200 open source systems. Specifically, we analyze the change history of these systems at commit level to investigate: (i) whether developers perform refactoring operations and, if so, which are more diffused and (ii) when refactoring operations are applied, and (iii) which are the main developer-oriented factors leading to refactoring. 
+    Based on our results, future research can focus on enabling automatic support for less frequent refactorings and on recommending refactorings based on the developer's workload, project's maturity and developer's commitment to the project.},
+  pdf={journals/scico19.pdf}
+}
