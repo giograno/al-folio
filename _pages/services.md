@@ -12,12 +12,15 @@ description: My contribution to SE community
 * **JSS** Journal of Systems and Software, Elsevier
 
 #### conferences
+* **2019**: ICSME (co-reviewer)
 * **2018**: MSR (co-reviewer), SANER (co-reviewer)
 * **2017**: ASE (co-reviewer), SATToSE (co-reviewer)
 
 ### awards and honors
  
 #### grants
+* SIGSOFT CAPS Grant of 500 CHF to attend ASE 2019
+* CHOOSE Grant of 500 CHF to attend ISSTA 2019
 * CHOOSE Grant of 500 CHF to attend SANER 2018
 * GRC Travel Grant of 1,200 CHF for a research visit ad Delft University of Technology
 
