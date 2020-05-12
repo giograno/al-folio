@@ -4,21 +4,13 @@ permalink: /teaching/
 title: teaching
 description: My teaching experience and the students I advised
 ---
-#### Fall 2019
-* **Informatik 1** Course Assistant
 
-#### Fall 2018
-* **Informatik 1** Course Assistant
-
-#### Fall 2018
-* **Informatik 1** Course Assistan
-
-#### Fall 2017
-* **Informatik 1** Course Assistant
-* **Software Maintenance and Evolution** Assistant: Co-Lecturer
-
-#### Spring 2017
-* **Sopra** Teaching Assistant: managed students' groups into the development of their project's course
+### Courses
+* Course Assistant & Lecturer in [Informatik](http://www.ifi.uzh.ch/en/seal/teaching/courses/info1.html) 1 HS17, HS18, HS19
+* Lecturer on Search-Based Software Engineering in [Advanced Software Engineering](https://www.ifi.uzh.ch/en/seal/teaching/courses/ase.html) FS20
+* Lecturer on Search-Based Software Testing in [Software Testing](https://www.ifi.uzh.ch/en/zest/teaching/spring2019/swtesting-2019.html) FS19, FS20
+* Lecturer on Search-Based Software Testing in [Software Maintenance and Evolution](https://www.ifi.uzh.ch/en/seal/teaching/courses/sme.html) HS18
+* Teaching Assistant in [Software Praktikum](https://www.ifi.uzh.ch/en/seal/teaching/courses/archive/FS17/sopra.html) (SoPra) FS17
 
 ---
 
