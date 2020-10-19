@@ -41,7 +41,7 @@ call plug#end()
 To conclude the installation, just eeload `vimrc` typing `:source ~/.vimrc` inside vim and then type `:PlugInstall` to install the plugin.
 
 First time I opened vim after that, I incurred in the `g:tex_flavor not specified` error. 
-Addding `let g:tex_flavor = 'latex'` to the `vimrc` file fixes this warning.
+Adding `let g:tex_flavor = 'latex'` to the `vimrc` file fixes this warning.
 
 As a color scheme, I am a fun of [dracula](https://draculatheme.com/vim) which I use on every IDE.  
 Again, I just added a new entry (`Plug 'dracula/vim', { 'as': 'dracula' }`) in the `vimrc` file and ran again `:PlugInstall`.
@@ -63,9 +63,7 @@ augroup vimtex_compilation
     au User VimtexEventCompileSuccess call UpdateSkim()
 augroup END
 
-function! UpdateSkim(status)
-    if !a:status | return | endif
-
+function! UpdateSkim()
     let l:out = b:vimtex.out()
     let l:tex = expand('%:p')
     let l:cmd = [g:vimtex_view_general_viewer, '-r']
