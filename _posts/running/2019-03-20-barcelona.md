@@ -4,6 +4,7 @@ title:  barcelona half marathon
 date: 2019-02-20 9:00:00
 description: my Barcelona Half Marathon
 running: running
+visible: 1
 comments: true
 ---
 

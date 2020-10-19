@@ -4,6 +4,7 @@ title:  Rotterdam Marathon
 date: 2019-04-10 9:00:00
 description: The disappointment of Rotterdam Marathon
 running: running
+visible: 1
 comments: true
 ---
 
