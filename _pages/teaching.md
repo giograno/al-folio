@@ -18,3 +18,6 @@ description: My teaching experience and the students I advised
 * **Lucas Pelloni** (Bachelor Thesis): *GUI usability and testing of mobile applications*
 
 * **Christian De Iaco** (Bachelor Thesis): *Developer's Perception of Unit Test Quality: An Empirical Investigation on Unit Test Quality from a Developer's Point of View*
+
+* **Christian Birchler** (Bachelor Thesis): *Estimation of Test Flakiness By Static and Dynamic Call-Graph Analysis*
+  co-advised with [Christoph Laaber](http://laaber.net/)
