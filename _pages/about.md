@@ -24,6 +24,8 @@ Just after my M.Sc. I worked for one year as IT Analyst and Developer at [Cedacr
 
 My main research interests include Search-Based Software Engineering (SBSE), with a main focus on Search-Based Software Testing (SBST), Software maintenance and evolution and Empirical Software Engineering.
 
-Passionate about research, coding, running (follow me [here](https://www.strava.com/athletes/20803711)) and coffee. 
+I have been a semi-pro runners for quite some time (follow me [here](https://www.strava.com/athletes/20803711)). 
+I hold a marathon [personal best](https://www.worldathletics.org/athletes/italy/giovanni-grano-14386274) of 2:14:31.
+I won the Italian Marathon Championship in 2020. 
 
 Here is a PDF version of my [CV]({{ site.baseurl }}{% link assets/pdf/cv_10.pdf %})!
