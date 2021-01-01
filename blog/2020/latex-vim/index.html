@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico?">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Giovanni Grano | latex with vim</title>
+  <meta name="description" content="Giovanni Grano - Web Site
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2020/latex-vim/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Giovanni</strong> Grano
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Blog: disabled -->
+        <a class="page-link" href="/blog/">blog</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/projects/">projects</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">publications</a>
+          
+        
+          
+            <a class="page-link" href="/services/">services</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">teaching</a>
+          
+        
+          
+        
+
+        <!-- Running Blog -->
+        <!-- <a class="page-link" href="/running/">running</a> -->
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">latex with vim</h1>
+    <p class="post-meta">October 19, 2020</p>
+  </header>
+
+  <article class="post-content">
+    <p>It is about time to start writing my thesis. For the occasion, I decided to move over vim (I was previously a user of Texpad).</p>
+
+<p>I want to briefly describe my basic configuration in a blog post with the hope it could be useful to someone else in the future.</p>
+
+<p>At first, I decided to use <a href="https://github.com/lervag/vimtex">vimtex</a>.
+To install such a plugin, I relied on <a href="https://github.com/junegunn/vim-plug">vim-plug</a>, a plugin manager for vim. The <a href="https://github.com/junegunn/vim-plug">repository</a> gives clear instructions on how to complete the process.</p>
+
+<p>With the command below, I downloaded the <code class="language-plaintext highlighter-rouge">plug.vim</code> file in the <code class="language-plaintext highlighter-rouge">autoload</code> directory of vim.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</code></pre></div></div>
+
+<p>Alternatively, as suggested by the documentation itself, it is possible to automate such a task by editing the vim configuration file (<code class="language-plaintext highlighter-rouge">~/.vimrc</code>) and adding this snippet:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+</code></pre></div></div>
+
+<p>Once the plugin manager was installed, I proceeded to install <code class="language-plaintext highlighter-rouge">vimtex</code>. The task is quite easy: I only needed to add the <code class="language-plaintext highlighter-rouge">Plug 'lervag/vimtex'</code> entry in the <code class="language-plaintext highlighter-rouge">vimrc</code> file like in the example below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>call plug#begin('~/.vim/plugged')
+...
+Plug 'lervag/vimtex'
+...
+call plug#end()
+</code></pre></div></div>
+
+<p>To conclude the installation, just eeload <code class="language-plaintext highlighter-rouge">vimrc</code> typing <code class="language-plaintext highlighter-rouge">:source ~/.vimrc</code> inside vim and then type <code class="language-plaintext highlighter-rouge">:PlugInstall</code> to install the plugin.</p>
+
+<p>First time I opened vim after that, I incurred in the <code class="language-plaintext highlighter-rouge">g:tex_flavor not specified</code> error. 
+Adding <code class="language-plaintext highlighter-rouge">let g:tex_flavor = 'latex'</code> to the <code class="language-plaintext highlighter-rouge">vimrc</code> file fixes this warning.</p>
+
+<p>As a color scheme, I am a fun of <a href="https://draculatheme.com/vim">dracula</a> which I use on every IDE.<br />
+Again, I just added a new entry (<code class="language-plaintext highlighter-rouge">Plug 'dracula/vim', { 'as': 'dracula' }</code>) in the <code class="language-plaintext highlighter-rouge">vimrc</code> file and ran again <code class="language-plaintext highlighter-rouge">:PlugInstall</code>.</p>
+
+<p>For the code completion, I first installed <a href="https://github.com/neoclide/coc.nvim">coc.nvim</a>, an Intellisense engine for vim with the corresponding <a href="https://github.com/neoclide/coc-vimtex">coc-vimtex</a> extension for tex.</p>
+
+<p>To visualize the PDF generated by LaTeX, I use Skim instead of Preview (easily installable via <code class="language-plaintext highlighter-rouge">brew</code>), since it supports forward and backward search.<br />
+To automatically show the PDF after compilation in Skim, I modified my <code class="language-plaintext highlighter-rouge">vimrc</code> configuration as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let g:vimtex_view_method = "skim"
+let g:vimtex_view_general_viewer
+        \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
+
+" This adds a callback hook that updates Skim after compilation        
+augroup vimtex_compilation
+    au!
+    au User VimtexEventCompileSuccess call UpdateSkim()
+augroup END
+
+function! UpdateSkim()
+    let l:out = b:vimtex.out()
+    let l:tex = expand('%:p')
+    let l:cmd = [g:vimtex_view_general_viewer, '-r']
+    if !empty(system('pgrep Skim'))
+    call extend(l:cmd, ['-g'])
+    endif
+    if has('nvim')
+    call jobstart(l:cmd + [line('.'), l:out, l:tex])
+    elseif has('job')
+    call job_start(l:cmd + [line('.'), l:out, l:tex])
+    else
+    call system(join(l:cmd + [line('.'), shellescape(l:out), shellescape(l:tex)], ' '))
+    endif
+endfunction
+</code></pre></div></div>
+
+<p>This is more or less my basic configuration and a decent starting point for more advanced customizations. More (much more) can be achieved by looking  at the vimtex <a href="https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt">documentation</a>.</p>
+
+<p>My environment currently looks like the pic below.
+I have a table on content opened on the left side to quickly jump amongst files. On the right side I keep Skim opened with the autocompile active.</p>
+
+<div class="img_row">
+    <img class="col three" src="/assets/img/workflow.png" alt="" title="latex workflow" />
+</div>
+
+  </article>
+
+  
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = 'giograno';
+      var disqus_identifier = '/blog/2020/latex-vim';
+      var disqus_title      = "latex with vim";
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2021 Giovanni Grano.
+    
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-117335212-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117335212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117335212-1');
+</script>
+
+
+
+    
+  </body>
+
+</html>
